@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Delete"
+        app:showAsAction="always"
+        android:id="@+id/menuDelete"
+        android:icon="@drawable/ic_baseline_delete_forever_24">
+    </item>
+    <item android:title="CheckedAll"
+        app:showAsAction="always"
+        android:id="@+id/menuCehckedAll"
+        android:icon="@drawable/ic_baseline_select_all_24">
+    </item>
+    <item
+        android:title="Add"
+        app:showAsAction="always"
+        android:id="@+id/menuAdd"
+        android:icon="@drawable/ic_baseline_add_24">
+    </item>
+</menu>

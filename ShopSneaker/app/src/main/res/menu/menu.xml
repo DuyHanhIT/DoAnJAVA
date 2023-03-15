@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="55dp"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_marginRight="10dp"
+    android:layout_gravity="right">
+    <item
+        android:icon="@drawable/icon_search"
+        android:id="@+id/menuSearch"
+        app:showAsAction="always"
+        android:title="Tim kiem"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+    <item
+        android:icon="@drawable/logout"
+        android:id="@+id/profile"
+        app:showAsAction="always"
+        android:title="Logout" />
+    <item android:id="@+id/menugiohang"
+        android:layout_marginTop="15dp"
+        android:icon="@drawable/muahang"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:title="Giỏ hàng"
+        app:showAsAction="always"/>
+
+</menu>

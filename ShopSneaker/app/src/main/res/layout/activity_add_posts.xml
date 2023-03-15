@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.AddPostsActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAddPosts"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorToolBar"
+        app:titleTextColor="@color/white"
+        app:title="Đăng bài viết">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="@+id/toolbarAdd">
+
+        <EditText
+            android:id="@+id/productname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:hint="Tên sản phẩm"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:inputType="number"
+            android:hint="Giá sản phẩm"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/edtsize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:hint="Size"
+            android:inputType="number"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/edtdescription"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:hint="Mô tả"
+            android:padding="5dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/parent_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_add_image"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="@android:color/background_light"
+                        android:inputType="phone"
+                        android:src="@android:drawable/ic_input_add"
+                        app:tint="@android:color/darker_gray" />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+        <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+            android:id="@+id/submit_button"
+            android:layout_marginTop="50dp"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:background="#450DD5DC"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:text="Upload"
+            app:spinning_bar_width="4dp"
+            app:spinning_bar_color="@color/colorPrimary"
+            app:spinning_bar_padding="6dp"/>
+    </LinearLayout>
+
+</LinearLayout>

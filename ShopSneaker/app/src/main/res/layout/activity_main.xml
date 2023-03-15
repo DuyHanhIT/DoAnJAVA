@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".activity.MainActivity">
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerlayoutManHinhChinh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/ToolbarManHinhChinh"
+                app:title="VLTH Store"
+                app:titleTextColor="@color/white"
+                android:background="@color/colorToolBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+            </androidx.appcompat.widget.Toolbar>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:id="@+id/rl_Sale"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.viewpager2.widget.ViewPager2
+                            android:id="@+id/viewpager2Sale"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"/>
+                        <me.relex.circleindicator.CircleIndicator3
+                            android:id="@+id/indicatorSale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_margin="20dp"
+                            android:layout_alignParentEnd="true"
+                            app:ci_drawable="@drawable/bg_indicator"
+                            />
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical"
+                        android:background="@color/background">
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:id="@+id/imageViewHotItems"
+                                android:layout_width="100dp"
+                                android:layout_height="30dp"
+                                android:scaleType="fitStart"
+                                android:src="@drawable/flashsale"
+                                app:layout_constraintStart_toStartOf="parent"
+                                tools:ignore="MissingConstraints"
+                                tools:layout_editor_absoluteY="0dp" />
+
+                            <TextView
+                                android:id="@+id/txt_flashsale_XemThem"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:gravity="center_vertical|right"
+                                android:paddingRight="15dp"
+
+                                android:text="Xem tất cả >"
+                                android:textColor="#000"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                tools:ignore="MissingConstraints"
+                                tools:layout_editor_absoluteY="0dp">
+                            </TextView>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="5dp">
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerViewHotItems"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="horizontal">
+                            </androidx.recyclerview.widget.RecyclerView>
+                            <TextView
+                                android:id="@+id/txt_ThongbaoFlashSale"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Không có sản phẩm"
+                                android:textSize="18sp"
+                                android:gravity="center">
+                            </TextView>
+
+                            <ProgressBar
+                                android:id="@+id/progessbarSaleMain"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:theme="@style/ProgressBarTheme" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical"
+                        android:background="@color/background">
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                android:paddingLeft="10dp"
+                                android:text="@string/tim_kiem_gan_day"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorPrimary"
+                                android:gravity="center_vertical"
+                                tools:ignore="MissingConstraints" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="5dp">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerViewSearchHistory"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                            </androidx.recyclerview.widget.RecyclerView>
+                            <TextView
+                                android:id="@+id/txt_ThongbaoSearhHistory"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Không có sản phẩm"
+                                android:textSize="18sp"
+                                android:gravity="center">
+                            </TextView>
+
+                            <ProgressBar
+                                android:theme="@style/ProgressBarTheme"
+                                android:id="@+id/progessbarSearchMain"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="20dp"
+                        android:background="@color/background">
+
+                        <TextView
+                            android:id="@+id/txtview_SanPhamMoiNhat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:text="Sản phẩm mới nhất"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints"></TextView>
+                        <TextView
+                            android:id="@+id/txtcountsp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:paddingTop="10dp"
+                            android:textColor="#000"
+                            android:layout_margin="10dp"
+                            android:layout_toEndOf="@+id/txtview_SanPhamMoiNhat"
+                            tools:ignore="MissingConstraints"
+                            tools:layout_editor_absoluteY="0dp" />
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerViewNewItems"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/txtview_SanPhamMoiNhat"
+                            android:layout_marginTop="5dp"
+                            app:layout_constraintTop_toBottomOf="@id/txtview_SanPhamMoiNhat"
+                            tools:layout_editor_absoluteX="9dp">
+                        </androidx.recyclerview.widget.RecyclerView>
+                        <TextView
+                            android:id="@+id/txt_ThongbaoNewShoes"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="88dp"
+                            android:gravity="center|center_vertical"
+                            android:text="Không có sản phẩm"
+                            android:textSize="18sp"
+                            app:layout_constraintTop_toTopOf="@+id/recyclerViewNewItems"
+                            tools:layout_editor_absoluteX="0dp">
+
+                        </TextView>
+
+                        <ProgressBar
+                            android:theme="@style/ProgressBarTheme"
+                            android:id="@+id/progessbarNewsShoesMain"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/background">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ListView
+                    android:paddingTop="20dp"
+                    android:id="@+id/ListviewManHinhChinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background"
+                    tools:ignore="MissingConstraints">
+                </ListView>
+                <LinearLayout
+                    android:id="@+id/linearLayoutAdmin"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@id/ListviewManHinhChinh">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp">
+                    </ImageView>
+                    <TextView
+                        android:text="Admin"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>

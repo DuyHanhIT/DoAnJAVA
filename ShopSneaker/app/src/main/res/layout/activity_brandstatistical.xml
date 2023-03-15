@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.QLSPActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarPostsManagement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorToolBar"
+        app:titleTextColor="@color/white"
+        app:title="Quản lý sản phẩm">
+
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textCountBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Brand: 0"
+            android:textColor="#000"
+            android:background="#fff"
+            android:textStyle="bold"
+            android:padding="5dp"
+            tools:layout_editor_absoluteY="0dp" />
+        <TextView
+            android:id="@+id/textCountShoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Sản phẩm: 0"
+            android:textColor="#000"
+            android:background="#fff"
+            android:padding="5dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/recyclerViewPostsManagment"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+
+</LinearLayout>

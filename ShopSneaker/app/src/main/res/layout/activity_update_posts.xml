@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="@color/background"
+tools:context=".activity.UpdatePostsActivity">
+<androidx.appcompat.widget.Toolbar
+    app:titleTextColor="@color/white"
+    android:id="@+id/toolbarupdatePosts"
+    app:title="Cập nhật bài đăng"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</androidx.appcompat.widget.Toolbar>
+<LinearLayout
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:background="@drawable/borderkhungsanpham"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtCustomerName2"
+            android:text="Trường"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            app:layout_constraintTop_toBottomOf="@id/txtCustomerName2"
+            android:id="@+id/txtShoesName2"
+            android:textSize="20dp"
+            android:text="Shoes name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            app:layout_constraintTop_toBottomOf="@id/txtShoesName2"
+            android:id="@+id/txtPrice2"
+            android:textSize="20dp"
+            android:text="Giá"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            app:layout_constraintTop_toBottomOf="@id/txtPrice2"
+            android:id="@+id/txtSize2"
+            android:textSize="20dp"
+            android:text="Size 40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            app:layout_constraintTop_toBottomOf="@id/txtSize2"
+            android:id="@+id/txtDescription3"
+            android:textSize="20dp"
+            android:text="Giày đẹp còn tốt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgShoes1"
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/imgShoes2"
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/imgShoes3"
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgShoes4"
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/imgShoes5"
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/imgShoes6"
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/spnstatus1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+        <Button
+            android:textColor="@color/white"
+            android:layout_marginLeft="300dp"
+            android:background="@color/colorPrimary"
+            android:text="Xác Nhận"
+            android:id="@+id/btnaccept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

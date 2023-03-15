@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">VLTH Sneaker</string>
+    <string name="toolBarTitleName">VLTnoH Sneaker</string>
+    <string name="titleListItems">Sản phẩm mới nhất</string>
+    <string name="ngv_home">Home</string>
+    <string name="ngv_favorite">Favorite</string>
+    <string name="ngv_history">History</string>
+    <string name="ngv_account">Account</string>
+    <string name="ngv_myProfile">My Profile</string>
+    <string name="ngv_change_password">Change Password</string>
+    <string name="ngv_OPEN">Open navigation drawer</string>
+    <string name="ngv_CLOSE">Close navigation drawer</string>
+    <string name="map_api_key">AIzaSyDBMq1GlP8PaZvgVYJj_ydgQV38q0--dzQ</string>
+    <string name="tim_kiem_gan_day">Tìm kiếm gần đây</string>
+
+</resources>

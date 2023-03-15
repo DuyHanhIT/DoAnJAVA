@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="8dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/textusercmt"
+                android:text="User"
+                android:textSize="17dp"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </TextView>
+
+            <TextView
+                android:id="@+id/textcomment"
+                android:text="Bình luận"
+                android:textSize="17dp"
+                android:maxLines="1"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            </TextView>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

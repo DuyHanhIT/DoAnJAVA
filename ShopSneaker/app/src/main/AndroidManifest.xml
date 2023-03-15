@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.shopsneaker">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".utils.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ShopSneaker"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:theme">
+        <activity
+            android:name=".activity.ShoesActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activity.AccountManagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MarketPlaceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MessageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TransactionManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.BrandStatisticalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.FullImageView"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AddPostsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.QLDonHangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TKDayMonthYearActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SizeManagmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.QLSPActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.updateSizeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MarketManagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MarketPostsManagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.UpdatePostsActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_api_key" />
+
+        <activity
+            android:name=".activity.MapsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AddProductSales"
+            android:exported="false" />
+        <activity
+            android:name=".activity.StatisticsByDate"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SalesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SaleDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AddSalesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.StatisticsById"
+            android:exported="false" />
+        <activity
+            android:name=".activity.StatisticsMonth"
+            android:exported="false" />
+        <activity
+            android:name=".activity.StatisticsByYear"
+            android:exported="false" />
+        <activity
+            android:name=".activity.UpdateOrder"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AddProduct"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ProductManagement"
+            android:exported="true" />
+        <activity
+            android:name=".activity.ThongKeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.OrderManagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SaleShoesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.ProductDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.GioHangActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.OrderActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.OrderDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.ThongTinKhachHangActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.ContactActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.ContactActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".activity.ContactActivity3"
+            android:exported="true" />
+        <activity
+            android:name=".activity.ResetPassActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.ChangePassActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.AddInforActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="CLOUDINARY_URL"
+            android:value="cloudinary://512743237357516:QR8tyj6HezL9s4gWZwWTB9ffxDQ@du7sfuuey" />
+    </application>
+
+</manifest>

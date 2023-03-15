@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <TextView
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Welcome Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <RelativeLayout
+        android:padding="20dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/login_title"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/img"
+        android:elevation="4dp"
+        android:orientation="vertical">
+
+    </RelativeLayout>
+
+    <EditText
+        android:background="@drawable/rounded_edittext"
+        android:id="@+id/txtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Email"
+        android:padding="10dp"
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionNext"
+        android:maxLength="100"
+        android:textColor="@color/black"/>
+    <EditText
+        android:background="@drawable/rounded_edittext"
+        android:id="@+id/txtPass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Password"
+        android:padding="10dp"
+        android:inputType="textPassword"
+        android:imeOptions="actionDone"
+        android:maxLength="100"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quên mật khẩu?"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="14sp"/>
+    </LinearLayout>
+    <Button
+        android:textColor="@color/white"
+        android:id="@+id/btnDangnhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:padding="10dp"
+        android:text="Đăng nhập"/>
+
+    <LinearLayout
+        android:id="@+id/layout_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/btnDangki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textSize="16sp"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:text="Đăng ký"/>
+    </LinearLayout>
+</LinearLayout>

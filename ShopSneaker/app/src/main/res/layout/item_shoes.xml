@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:elevation="8dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    app:cardCornerRadius="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imageShoes"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/textviewName"
+                android:layout_gravity="center"
+                android:text="Ten sp moi"
+                android:textSize="17dp"
+                android:maxLines="1"
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:gravity="center">
+
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+
+                android:gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/textviewPrice"
+                    android:text="Giá: 2500000"
+                    android:maxLines="1"
+                    android:textSize="17dp"
+                    android:layout_marginRight="2dp"
+                    android:textColor="@android:color/holo_red_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/textviewSalePrice"
+                    android:textSize="16dp"
+                    android:text="2500 USD"
+                    android:layout_marginLeft="3dp"
+                    android:maxLines="1"
+                    android:textColor="@android:color/holo_red_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textviewDescription"
+                android:textSize="14dp"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:maxLines="1"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom"
+                >
+
+                <TextView
+                    android:id="@+id/textviewPurchased"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:gravity="bottom|right"
+                    android:maxLines="1"
+                    android:text="Da ban"
+                    android:textColor="#000"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="0dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/img_iconNewShoes"
+        android:layout_gravity="top|right"
+        android:src="@drawable/icon_new"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        >
+    </ImageView>
+    <LinearLayout
+        android:id="@+id/linearLayoutIconSale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:background="#FFC107"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textviewpercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/holo_red_light"
+            android:paddingTop="3dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giảm"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="3dp"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

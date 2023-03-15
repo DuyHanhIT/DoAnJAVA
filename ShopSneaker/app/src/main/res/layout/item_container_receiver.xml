@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8sp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="4sp">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@id/txtMess"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/smileicon"/>
+    <TextView
+        app:layout_constraintWidth_max="wrap"
+        android:id="@+id/txtMess"
+        android:background="@drawable/background_receiver"
+        android:padding="12sp"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:layout_marginStart="4sp"
+        android:layout_marginLeft="4sp"
+        app:layout_constraintStart_toEndOf="@id/imgProfile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.75"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+    </TextView>
+    <TextView
+        android:id="@+id/txtDateTime"
+        android:textColor="@color/dialog2"
+        android:textSize="10sp"
+        android:layout_marginTop="4sp"
+        app:layout_constraintStart_toStartOf="@+id/txtMess"
+        app:layout_constraintTop_toBottomOf="@+id/txtMess"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

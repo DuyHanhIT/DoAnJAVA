@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="10"
+    android:background="@drawable/borderkhungsanpham"
+    android:layout_margin="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/ic_launcher"
+                android:adjustViewBounds="true"
+                android:id="@+id/imagegiohang"
+                android:layout_width="110dp"
+                android:layout_height="110dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:id="@+id/textviewtenmonhang"
+                android:text="Tên món hàng"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:text="Giá món hàng"
+                android:textColor="@color/black"
+                android:id="@+id/textviewgiamonhang"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:text="Size"
+                android:textColor="@color/black"
+                android:id="@+id/textviewsize"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/buttonminusleft"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"
+                    android:background="@color/startblue"
+                    android:text="-"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp" />
+                <Button
+                    android:focusable="false"
+                    android:id="@+id/buttonvalue"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"
+                    android:background="@color/startblue"
+                    android:text="1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+                <Button
+                    android:id="@+id/buttonminusright"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"
+                    android:background="@color/startblue"
+                    android:text="+"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

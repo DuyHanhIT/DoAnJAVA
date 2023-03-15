@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ShopSneaker" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="MyRatingBar" parent="Widget.AppCompat.RatingBar">
+        <!--        non selected start color-->
+        <item name="colorControlNormal">#4D000000</item>
+        <!--         selected start color-->
+        <item name="colorControlActivated">@color/dialog1</item>
+    </style>
+    <style name="ProgressBarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+</resources>
